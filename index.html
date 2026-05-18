@@ -566,11 +566,13 @@ function renderCfg() {
       </div>
       <div class="ol-btm">
         <div class="stepper">
+          <button class="stp" onclick="changeBags('${id}',-100)">−100</button>
           <button class="stp" onclick="changeBags('${id}',-10)">−10</button>
           <button class="stp" onclick="changeBags('${id}',-1)">−1</button>
           <div class="stp-val">${bags}</div>
           <button class="stp" onclick="changeBags('${id}',1)">+1</button>
           <button class="stp" onclick="changeBags('${id}',10)">+10</button>
+          <button class="stp" onclick="changeBags('${id}',100)">+100</button>
         </div>
         <div class="ol-sub">$${sub.toFixed(2)}</div>
       </div>${warn}
